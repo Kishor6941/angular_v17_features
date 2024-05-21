@@ -1,0 +1,52 @@
+
+.main-content {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.admin-dashboard {
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.admin-dashboard h1 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.admin-section {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-left: 4px solid #333;
+    background-color: #fafafa;
+}
+
+.admin-section h2 {
+    margin-top: 0;
+}
+
+.admin-button {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.admin-button:hover {
+    background-color: #575757;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+

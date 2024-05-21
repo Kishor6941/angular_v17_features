@@ -1,0 +1,5 @@
+@for (user of userList; track user?.id) {
+    <h1>{{user?.name}}</h1>
+}
+
+<button (click)="sendToParent()">Send to Parent</button>
