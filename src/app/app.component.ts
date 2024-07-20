@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ChildCompComponent } from "./child-comp/child-comp.component";
+import { HttpClient } from '@angular/common/http';
 
 
 @Component({
@@ -11,6 +12,7 @@ import { ChildCompComponent } from "./child-comp/child-comp.component";
     imports: [RouterOutlet, ChildCompComponent, RouterLink]
 })
 export class AppComponent {
+    http = inject(HttpClient)
 //   nameList = [
 //     {id : 1, name : "Kishor"},
 //     {id : 2, name : "Sunil"},
@@ -21,4 +23,12 @@ export class AppComponent {
 // console.log(event)
 // this.name = event;
 //   }
+
+ngOnInit(): void {
+    //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
+    //Add 'implements OnInit' to the class.
+ this.http.get("https://jsonplaceholder.typicode.com/todos/1").subscribe((res)=>{
+    
+ })  
+}
 }
