@@ -38,5 +38,12 @@ export const routes: Routes = [
     {
         path : 'access-denied',
         component : AccessDeinedComponent,
+    }, {
+        path : 'defer',
+        loadComponent : () => import("./defer-example/defer-example.component").then((comp) => comp.DeferExampleComponent)
+    },
+    {
+        path : 'view-child',
+        loadComponent : () => import("./view-child-c/view-child-c.component").then((c) => c.ViewChildCComponent)
     }
 ];
