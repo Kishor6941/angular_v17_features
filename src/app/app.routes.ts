@@ -45,5 +45,9 @@ export const routes: Routes = [
     {
         path : 'view-child',
         loadComponent : () => import("./view-child-c/view-child-c.component").then((c) => c.ViewChildCComponent)
+    },
+    {
+        path : 'content-project',
+        loadComponent : () => import("./content-projection/content-projection.component").then((c) => c.ContentProjectionComponent)
     }
 ];
