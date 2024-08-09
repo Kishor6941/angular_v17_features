@@ -3,6 +3,14 @@
   "compileOnSave": false,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "demo-lib": [
+        "./dist/demo-lib"
+      ],
+      "learn-demo-lib": [
+        "./dist/learn-demo-lib"
+      ]
+    },
     "strict": true,
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,

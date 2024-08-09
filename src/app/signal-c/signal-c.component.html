@@ -1,0 +1,15 @@
+
+<div class="col-md-6 m-auto mt-2">
+    <div class="">
+        <button class="btn btn-success" (click)="inc()">+</button>
+        <h1>{{counter()}}</h1>
+        <button class="btn btn-danger" (click)="dec()">-</button>
+    </div>
+
+    <ng-container>
+       @for (item of messageList(); track $index) {
+        <li>{{item}}</li>
+       } 
+    </ng-container>
+    
+</div>

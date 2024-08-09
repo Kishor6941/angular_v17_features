@@ -1,15 +1,19 @@
-import { Component, inject } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, inject, NO_ERRORS_SCHEMA } from '@angular/core';
 import { RouterLink, RouterOutlet } from '@angular/router';
 import { ChildCompComponent } from "./child-comp/child-comp.component";
 import { HttpClient } from '@angular/common/http';
-
+import { LearnDemoLibComponent } from '../../projects/learn-demo-lib/src/public-api';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrl: './app.component.scss',
-    imports: [RouterOutlet, ChildCompComponent, RouterLink]
+    imports: [RouterOutlet, ChildCompComponent, RouterLink, LearnDemoLibComponent],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA,
+        NO_ERRORS_SCHEMA
+      ]
 })
 export class AppComponent {
     http = inject(HttpClient)

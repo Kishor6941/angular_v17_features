@@ -49,5 +49,9 @@ export const routes: Routes = [
     {
         path : 'content-project',
         loadComponent : () => import("./content-projection/content-projection.component").then((c) => c.ContentProjectionComponent)
-    }
+    },
+   {
+    path : "signalc",
+    loadComponent : () =>import("./signal-c/signal-c.component").then((c) => c.SignalCComponent)
+   }
 ];

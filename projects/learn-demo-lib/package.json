@@ -1,0 +1,22 @@
+{
+  "name": "learn-demo-lib",
+  "version": "0.0.2",
+  "description": "This is test Angular library you have to add name property and you will see who is working on this lib",
+  "keywords": ["Code","Angular"],
+  "author": {
+    "name" : "Kishor Fawade",
+    "email" : "phawadeks9049@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Kishor6941/angular_v17_features.git"
+  },
+  "peerDependencies": {
+    "@angular/common": "^17.3.0",
+    "@angular/core": "^17.3.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false
+}
